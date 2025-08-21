@@ -1,4 +1,4 @@
-module tmux-githop
+module github.com/callumio/tmux-githop
 
 go 1.21
 

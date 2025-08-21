@@ -26,7 +26,7 @@
         };
       };
 
-      packages.default = pkgs.callPackage ./. {};
+      packages.default = pkgs.callPackage ./nix {};
 
       devShells.default = pkgs.mkShell {
         inherit (self.checks.${system}.pre-commit-check) shellHook;
