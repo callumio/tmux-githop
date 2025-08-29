@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"os/exec"
 )
@@ -20,7 +21,7 @@ func sessionExists(name string) bool {
 func switchSession() error {
 	out, err := runCmd("tmux", "list-sessions", "-F", "#{session_name}")
 	if err != nil {
-		return err
+		return fmt.Errorf("failed to list tmux sessions: %w. Make sure tmux is running and has active sessions", err)
 	}
 
 	sessions := splitOutput(out)
