@@ -225,10 +225,25 @@ func switchSession() error {
 	return exec.Command("tmux", "switch-client", "-t", selected).Run()
 }
 
+func commandExists(cmd string) bool {
+	_, err := exec.LookPath(cmd)
+	return err == nil
+}
+
 func main() {
 	var pick = flag.Bool("p", false, "pick session from ghq repos")
 	var switch_ = flag.Bool("s", false, "switch between existing sessions")
 	flag.Parse()
+
+	if !commandExists("ghq") {
+		fmt.Fprintf(os.Stderr, "Error: ghq is not installed\n")
+		os.Exit(1)
+	}
+
+	if !commandExists("tmux") {
+		fmt.Fprintf(os.Stderr, "Error: tmux is not installed\n")
+		os.Exit(1)
+	}
 
 	selections := 0
 	if *pick {
