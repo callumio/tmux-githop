@@ -1,5 +1,13 @@
 # tmux-githop
 
+<p align = "center">
+    <a href="https://github.com/callumio/tmux-githop/releases/latest"><img alt="Release" src="https://img.shields.io/github/release/callumio/tmux-githop.svg"></a>
+    <a href="https://github.com/callumio/tmux-githop/actions?workflow=ci"><img alt="GitHub Actions" src="https://img.shields.io/github/actions/workflow/status/callumio/tmux-githop/ci.yml?branch=main"></a>
+    <a href="/LICENSE.md"><img alt="Software License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg"></a>
+    <a href="https://goreportcard.com/report/github.com/callumio/tmux-githop"><img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/callumio/tmux-githop"></a>
+
+</p>
+
 Fast tmux session hopping between git repos
 
 ## Features
