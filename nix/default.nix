@@ -10,7 +10,7 @@ buildGoModule {
 
   src = ../.;
 
-  vendorHash = "sha256-m4QIGiuk8SbuwLI+Lp+NHgEZOvtwo7rbUiVmm7jwJ24=";
+  vendorHash = "sha256-xTZBpNc7P8jLCPpsv3cTclVNtLwbW3O/LcF4mYAzXsM=";
 
   nativeBuildInputs = [tmux ghq];
 
