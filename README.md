@@ -26,10 +26,10 @@ Fast tmux session hopping between git repos
 sudo apt install ./tmux-githop_*_amd64.deb
 
 # Red Hat/Fedora  
-sudo dnf install ./tmux-githop_*_x86_64.rpm
+sudo dnf install ./tmux-githop_*_amd64.rpm
 
 # Alpine
-sudo apk add --allow-untrusted ./tmux-githop_*_x86_64.apk
+sudo apk add --allow-untrusted ./tmux-githop_*_amd64.apk
 ```
 
 #### Nix/NixOS
